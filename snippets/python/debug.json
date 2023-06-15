@@ -1,7 +1,9 @@
 {
     "IPDB set trace": {
         "prefix": "ipdb",
-        "body": [ "import ipdb; ipdb.set_trace()" ],
+        "body": [
+            "import ipdb; ipdb.set_trace()"
+        ]
     },
     "Exception ipdb": {
         "prefix": "exipdb",

@@ -1,13 +1,12 @@
 {
-    "PDB set trace": {
-        "prefix": "pdb",
-        "body": "__import__('pdb').set_trace()$0",
-        "description": "Code snippet for pdb debug"
-    },
-    "iPDB set trace": {
+    "IPDB set trace": {
         "prefix": "ipdb",
-        "body": "__import__('ipdb').set_trace()$0",
-        "description": "Code snippet for ipdb debug"
+        "body": [ "import ipdb; ipdb.set_trace()" ],
+    },
+    "Exception ipdb": {
+        "prefix": "exipdb",
+        "body": [ "from ipdb import launch_ipdb_on_exception\nwith launch_ipdb_on_exception():" ],
+        "description": "Ipdb on exception"
     },
     "rPDB set trace": {
         "prefix": "rpdb",
